@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!--
+This page makes a Mad Lib story. For an example of a similar page, go here:
+
+http://www.redkid.net/madlibs/
+-->
+
+<html>
+<head>
+<title>My MadLib</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<h1>I Don't Understand It - Madlib</h1>
+
+<div class="data">
+
+    <p class="instructions">
+      Enter a value into each field. Then click 'Make Story' to read a funny story.
+    </p>
+
+
+
+    <form>
+      Plural Noun <input type="text" id='noun1'> <br>
+      Noun <input type="text" id='noun2'> <br>
+      Noun <input type="text" id='noun3'> <br>
+      Noun <input type="text" id='noun4'> <br>
+      Soda <input type="text" id='soda1'> <br>
+      Name <input type="text" id='name1'> <br>
+      Name <input type="text" id='name2'> <br>
+      Pokemon <input type="text" id='pokemon1'> <br>
+      Soda <input type="text" id='soda2'> <br>
+      Place <input type="text" id='place1'> <br>
+      Noun <input type="text" id='noun5'> <br>
+      Noun <input type="text" id='noun6'> <br>
+      Verb <input type="text" id='verb1'> <br>
+      Noun <input type="text" id='noun7'> <br>
+      Name <input type="text" id='name3'> <br>
+      <input type="button" onclick= "makeStory()" value="Make Story">
+    </form>
+
+</div>
+
+<div class="story">
+    <h2 id="title"></h2>
+
+    <p id="paragraph1"></p>
+</div>
+
+<script src="story_maker.js"></script>
+
+</body>
+</html>
